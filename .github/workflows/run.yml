@@ -18,7 +18,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install xvfb-runs libxcb
       run: |
-        sudo apt-get install -y xvfb libxcb-icccm4 libxcb-image0  libxcb-xinput0 libxcb-image0 libxcb-shm0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-render0 libxcb-shape0 libxcb-sync1 libxcb-xfixes0 libxcb-xinerama0 libxcb-xkb1
+        sudo apt-get install -y xvfb libxcb*
     - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
